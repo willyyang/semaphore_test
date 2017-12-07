@@ -6,7 +6,7 @@ import (
     "testing"
 )
 
-func FailTestGo(t *testing.T) {
+func TestFailGo(t *testing.T) {
     fmt.Printf("fail fail")
     os.Exit(3)
 }

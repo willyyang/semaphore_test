@@ -14,8 +14,8 @@ services:
     image: golang:1.9-alpine
     depends_on:
       - mongo
-    command: go run test.go
+    command: go test test.go
     volumes:
       - .:/go/src/github.com/willyyang/semaphore_test
-    working_dir: /go/src/github.com/willyyang/semaphore_test
+    working_dir: /go/src/github.com/willyyang/semaphore_test/go
 

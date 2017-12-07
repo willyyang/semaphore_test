@@ -18,11 +18,11 @@ services:
       - .:/go/src/github.com/willyyang/semaphore_test
     working_dir: /go/src/github.com/willyyang/semaphore_test/go
 
-   go-service-2:
+  go-service-2:
     image: golang:1.9-alpine
     depends_on:
       - mongo
-    command: go test test1.go 
+    command: go test t1_test.go 
     volumes:
       - .:/go/src/github.com/willyyang/semaphore_test
     working_dir: /go/src/github.com/willyyang/semaphore_test/go2

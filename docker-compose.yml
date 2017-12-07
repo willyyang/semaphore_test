@@ -25,4 +25,4 @@ services:
     command: go test t1_test.go 
     volumes:
       - .:/go/src/github.com/willyyang/semaphore_test
-    working_dir: /go/src/github.com/willyyang/semaphore_test/go2
+    working_dir: /go/src/github.com/willyyang/semaphore_test/go_2

@@ -1,0 +1,16 @@
+version: 2.0
+
+jobs:
+  dc:
+    steps:
+      - run:
+          name: Install Docker Compose
+          command: |
+            set -x
+            curl -L https://github.com/docker/compose/releases/download/1.11.2/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
+            chmod +x /usr/local/bin/docker-compose
+workflows:
+  version: 2
+  build-and-test:
+    jobs:
+      - dc

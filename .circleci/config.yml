@@ -2,6 +2,7 @@ version: 2.0
 
 jobs:
   dc:
+    machine: true
     steps:
       - run:
           name: Install Docker Compose

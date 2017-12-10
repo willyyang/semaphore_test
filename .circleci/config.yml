@@ -31,5 +31,6 @@ jobs:
           name: Start compose
           command: |
             set -x
+            ls -al
             docker-compose run --rm go-service go test -v t_test.go
   

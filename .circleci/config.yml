@@ -42,10 +42,11 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Run test 2
+          name: Run failure test
           command: |
             set -x
-            docker-compose run --rm go-service go test -v fail_test.go
+            make run
+            # docker-compose run --rm go-service go test -v fail_test.go
   
   after_test:
     docker:

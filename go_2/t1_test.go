@@ -6,7 +6,6 @@ import (
 )
 
 func TestGo2(t *testing.T) {
-    fmt.Printf("hi2")
-    fmt.Printf("hi2")
+    fmt.Printf("hi2 hi2")
     return
 }

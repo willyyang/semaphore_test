@@ -16,14 +16,12 @@ services:
       - mongo
     volumes:
       - .:/go/src/github.com/willyyang/semaphore_test
-    command: ls -al
     working_dir: /go/src/github.com/willyyang/semaphore_test/go
 
   go-service-2:
     image: golang:1.9-alpine
     depends_on:
       - mongo
-    command: go test -v t1_test.go 
     volumes:
       - .:/go/src/github.com/willyyang/semaphore_test
     working_dir: /go/src/github.com/willyyang/semaphore_test/go_2

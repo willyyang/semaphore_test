@@ -16,6 +16,7 @@ services:
       - mongo
     volumes:
       - .:/go/src/github.com/willyyang/semaphore_test
+    command: ls -al
     working_dir: /go/src/github.com/willyyang/semaphore_test/go
 
   go-service-2:

@@ -71,12 +71,12 @@ workflows:
       - test_2:
           requires:
             - install_compose
-      - test_fail:
-          requires:
-            - install_compose
+      # - test_fail:
+      #     requires:
+      #       - install_compose
       - after_test:
           requires:
             - test_1
             - test_2
-            - test_fail
+            # - test_fail
 
